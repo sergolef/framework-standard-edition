@@ -1,0 +1,3 @@
+rest_web_homepage:
+    path:     /
+    defaults: { _controller: WebBundle:Default:index }

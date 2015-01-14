@@ -1,0 +1,16 @@
+{% extends 'WebBundle::base.html.twig' %}
+{% block body %}
+<div class="body" ng-app="myApp">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span2">
+                <!-- Menu -->
+            </div>
+            <center><h3>Guzzel TEST</h3></center>
+            <div class="span10">
+                <!-- Body -->
+                <div ng-view>{{content}}</div>
+            </div>
+    </div>
+</div>
+{% endblock %}

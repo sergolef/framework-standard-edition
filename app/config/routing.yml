@@ -1,0 +1,16 @@
+web:
+    resource: "@WebBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: @AppBundle/Controller/
+    type:     annotation
+
+#REST
+rest :
+    type : rest
+    resource : "routing_rest.yml"
+    prefix : /api
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

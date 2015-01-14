@@ -1,0 +1,8 @@
+test :
+    type: rest
+    resource:     "ApiBundle:RestTest"
+    name_prefix:  api_
+
+auth :
+    type: annotation
+    resource:     "@ApiBundle/Controller/AuthController.php"

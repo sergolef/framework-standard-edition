@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/restuser/js/bootstrap/dist/css/bootstrap.min.css') }}"/>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            <script type="text/javascript" src="{{ asset('bundles/restuser/js/angular/angular.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/restuser/js/jquery/dist/jquery.min.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/restuser/js/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+            <script type="text/javascript" src="{{ asset('bundles/restuser/js/app.js') }}"></script>
+            <script type="text/javascript" src="{{ asset('bundles/restuser/js/controllers.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
